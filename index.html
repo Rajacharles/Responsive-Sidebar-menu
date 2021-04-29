@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Left Navbar </title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo_content">
+      <div class="logo">
+        <div class="logo_name">FRONT END</div>
+      </div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+
+    <ul class="nav_list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Search here">
+        <span class="tooltip">Search</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bxs-tree'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bxs-camera-movie'></i>
+          <span class="links_name">Media</span>
+        </a>
+        <span class="tooltip">Media</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bxs-medal'></i>
+          <span class="links_name">Ratings</span>
+        </a>
+        <span class="tooltip">Ratings</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bxs-plane'></i>
+          <span class="links_name">Travel</span>
+        </a>
+        <span class="tooltip">Travel</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-fingerprint'></i>
+          <span class="links_name">Privacy</span>
+        </a>
+        <span class="tooltip">Privacy</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bxs-bell-ring'></i>
+          <span class="links_name">Notifications</span>
+        </a>
+        <span class="tooltip">Notifications</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bxl-twitter'></i>
+          <span class="links_name">Social</span>
+        </a>
+        <span class="tooltip">Social</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bxs-paper-plane'></i>
+          <span class="links_name">Mail</span>
+        </a>
+        <span class="tooltip">Mail</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="home_content">
+    <div class="text">
+      <header id="showcase" class="container">
+        <h1>Welcome to my website</h1>
+      </header>
+      <div id="content" class="container">
+        <h5>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit natus sed neque? Nostrum praesentium inventore sit soluta, voluptates officia in repellendus, laudantium cupiditate itaque officiis culpa corporis at veritatis dignissimos? Placeat, iure cum beatae doloremque molestiae possimus, explicabo, accusantium minus consequatur aperiam culpa deleniti fugit reprehenderit odio animi laboriosam aut.
+        </h5>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search");
+
+    btn.onclick = function(){
+      sidebar.classList.toggle("active");
+    }    
+    searchBtn.onclick = function(){
+      sidebar.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
+
